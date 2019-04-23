@@ -25,4 +25,30 @@
 
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>nexus</id>
+            <url>http://10.220.60.194:8082/repository/pos40-snapshots/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>nexus</id>
+            <url>http://10.220.60.194:8082/repository/pos40-snapshots/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <url>http://10.220.60.194:8082/repository/pos40-local-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <url>http://10.220.60.194:8082/repository/pos40-local-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
 </project>
